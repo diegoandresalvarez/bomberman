@@ -16,7 +16,7 @@ NOTA: en caso que encuentren un error en el programa suministrado, repórtenlo t
 * Agosto 9 de 2019, a partir de las 7:00 am, de acuerdo con el horario acordado con el profesor.
 
 # Lo que debe programar
-Lo pedido a continuación debe funcionar de forma similar al juego [https://www.retrogames.cc/nes-games/bomberman-usa.html]. Nota: el video https://www.youtube.com/watch?v=3smytj9Bu_E le puede ayudar a entender como funciona el juego. Ver adicionalmente: http://strategywiki.org/wiki/Bomberman 
+Lo pedido a continuación debe funcionar de forma similar al juego https://www.retrogames.cc/nes-games/bomberman-usa.html. Nota: el video https://www.youtube.com/watch?v=3smytj9Bu_E le puede ayudar a entender como funciona el juego. Ver adicionalmente: http://strategywiki.org/wiki/Bomberman 
 
 El programa se calificará por objetivos de la siguiente forma:
 
@@ -42,18 +42,18 @@ Los puntos obligatorios no otorgan unidades, solo las quitan, es decir un progra
  ## Puntos opcionales
 * Hacer introducción del juego similar a la del original: (**+1.0 unidad**).
 
-* Al presionar `H` o `h` aparece el manual de instrucciones del juego: (**+0.5 unidades**).
+* Al presionar `H` o `h` aparece el manual de instrucciones del juego. Al aparecer la ayuda, el juego (incluyendo el cronómetro del tiempo) se para: (**+0.5 unidades**).
 
-* Deben haber al menos 10 niveles de juego (cada tablero es más complejo). Debe mostrar el cuadro donde diga el número del nivel al que se pasa, tal y como sucede en el juego original; cada vez que se pasa de un nivel a otro, el número de las vidas del bomberman aumenta en uno. Sólo se pasará de nivel si todos los globos han sido exterminados y si se toca la puerta [](imagenes/losa_puerta.png) para pasar niveles  (**+2.0 unidades**). 
+* Deben haber al menos 10 niveles de juego (cada tablero es más complejo). Debe mostrar el cuadro donde diga el número del nivel al que se pasa, tal y como sucede en el juego original; cada vez que se pasa de un nivel a otro, el número de las vidas del bomberman aumenta en uno. Sólo se pasará de nivel si todos los globos han sido exterminados y si se toca la puerta ![](imagenes/losa_puerta.png) para pasar niveles  (**+2.0 unidades**). Implementar una rutina que genere los muros suaves y las losetas de poder aleatoriamente (**+1.0 puntos**).
 
-* Implementa los diferentes tipos de enemigos de modo que varios tipos de ellos aparezcan simultáneamente en el juego:
+
+* Implementa los diferentes tipos de enemigos de modo que varios tipos de ellos aparezcan simultáneamente en el juego. No se puede repetir el código sino que debe modificarse las funciones de los globos para que maneje los diferentes tipos de enemigo.:
   * Globo: 100 puntos cuando muere (**si no se realiza -1.0 unidad**)
   * Cebolla: 200 puntos cuando muere  **(+0.5 puntos)**
   * Barril: 400 puntos cuando muere  **(+0.5 puntos)**
   * Moneda: 800 puntos cuando muere  **(+1.0 punto)**. Tiene el poder de perseguir al bomberman.
   * Amebas (1000 puntos cuando muere) y fantasmas (2000 puntos cuando muere): tienen la capacidad de atravesar muros. Se mueven más lento que los otros enemigos. **(+1.0 puntos cada uno)**
   * Oso: 4000 puntos cuando muere. Se mueve al doble de la velocidad que los globos  **(+0.5 puntos)**
-En la implementación anterior, no se vale repetir el código sino que debe reutilizarse la función de los globos para que maneje los diferentes tipos de enemigo.
 
 * Cuando varios de estos enemigos mueren simultáneamente con la misma explosión, el número de puntos obtenidos se duplicará: **+0.5 unidades**.
 
@@ -64,13 +64,13 @@ En la implementación anterior, no se vale repetir el código sino que debe reut
 * Debajo de los muros suaves existirán ciertas losetas que darán algunos poderes especiales. Dichas losetas aparecerán una vez se destruya el muro suave, y el bomberman obtendrá el poder especial una vez dicha loseta es tocada. Tenga en cuenta que los enemigos pueden atravesar todas estas losas sin dificultad.
 Las losetas especiales se listan a continuación:
 
-    * Losa que incrementa la velocidad de movimiento del bomberman [](imagenes/losa_incrementa_vel_bomberman.png) (**+0.5 unidades**).
+    * Losa que incrementa la velocidad de movimiento del bomberman ![](imagenes/losa_incrementa_vel_bomberman.png) (**+0.5 unidades**).
 
-    * Losa que permite incrementar el número de bombas que se pueden colocar simultáneamente en el tablero [](imagenes/losa_bomba_extra.png) (**+0.5 unidades**). Tenga en cuenta que al inicio del juego, el bomberman solo puede colocar una bomba.
+    * Losa que permite incrementar el número de bombas que se pueden colocar simultáneamente en el tablero ![](imagenes/losa_bomba_extra.png) (**+0.5 unidades**). Tenga en cuenta que al inicio del juego, el bomberman solo puede colocar una bomba.
 
-    * Losa que incrementa la intensidad de explosión de una bomba en un cuadro a la redonda [](imagenes/losa_incrementa_llama.png) (**+0.5 unidades**). 
+    * Losa que incrementa la intensidad de explosión de una bomba en un cuadro a la redonda ![](imagenes/losa_incrementa_llama.png) (**+0.5 unidades**). 
 
-    * Losa que otorga el poder de atravesar muros y pararse/atravesar las bombas [](imagenes/losa_atravesar_muros.png) (**+0.5 unidades**). Observe que no se puede permitir colocar bomba directamente sobre un muro suave.
+    * Losa que otorga el poder de atravesar muros y pararse/atravesar las bombas ![](imagenes/losa_atravesar_muros.png) (**+0.5 unidades**). Observe que no se puede permitir colocar bomba directamente sobre un muro suave.
 
 * Cuando se toma una de esas losetas especiales, suena un sonido especial (**+0.5 unidades**).
 
@@ -89,7 +89,7 @@ Otros puntos varios:
 
 * Si se ataca por error la puerta de salida (con una bomba), saldrán de esta posición, 10 globos adicionales que pueden atravesar muros y son 30% más veloces que los globos normales. (**+1.0 unidad**).
 
-* Se implementa el [nivel bonus](https://youtu.be/Lewp4TPBbHM?t=932) entre el nivel 5 y 6 (**+2.0 unidades**).
+* Se implementa el [bonus stage](https://youtu.be/Lewp4TPBbHM?t=932) entre el nivel 5 y 6 (**+2.0 unidades**).
 
 * Cuando se presiona `M` se activa/desactiva la música y los sonidos (**0.5 unidades**).
 
@@ -99,8 +99,6 @@ Otros puntos varios:
   * si la onda explosiva puede ingresar también por los túneles **+1.0 unidad**
 
 * Si una bomba explota y su onda explosiva toca otra bomba, esta bomba también explotará (**+0.5 unidades**).
-
-* Implementar una rutina que genere los muros suaves y las losetas de poder aleatoriamente (**+0.5 puntos**).
 
 * Muros de acero: son muros que requieren mínimo tres explosiones para desaparecer. Estos muros se verán en la pantalla con un color diferente: **+0.5 unidades**.
 
