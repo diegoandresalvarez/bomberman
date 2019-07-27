@@ -85,7 +85,7 @@ Otros puntos varios:
 
 * Implementar el juego de modo que funcione con joysticks (**1.0 unidad**).
 
-* Implementar una pausa al presionar la tecla espacio. En este caso, detener el cronómetro de juego y reanudarlo una vez se vuelva a presionar la tecla espacio (**1.0 unidad**).
+* Implementar una pausa al presionar `P` o `p`. En este caso, detener el cronómetro de juego y reanudarlo una vez se vuelva a presionar la tecla espacio (**1.0 unidad**).
 
 * Si se ataca por error la puerta de salida (con una bomba), saldrán de esta posición, 10 globos adicionales que pueden atravesar muros y son 30% más veloces que los globos normales. (**+1.0 unidad**).
 
@@ -102,7 +102,7 @@ Otros puntos varios:
 
 * Muros de acero: son muros que requieren mínimo tres explosiones para desaparecer. Estos muros se verán en la pantalla con un color diferente: **+0.5 unidades**.
 
-* Implementar el TOP 10 de los mejores jugadores del juego, guardarlo a disco y recuperarlo al iniciar el programa; Al presionar 'T' o 't' se hace una pausa y aparece el top 10 de los mejores jugadores del juego: **+4.0 unidades**
+* Implementar el TOP 10 de los mejores jugadores del juego, guardarlo a disco y recuperarlo al iniciar el programa; Al presionar `T` o `t` se hace una pausa y aparece el top 10 de los mejores jugadores del juego: **+4.0 unidades**
 
 # Notas adicionales
 * En caso que se detecte que hay copia en alguno de los puntos presentados se tendrá como nota un **0.0** en todo el taller (usted y su compañero).
