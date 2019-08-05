@@ -1,6 +1,6 @@
 # Taller de programación 2: (20% de la nota final)
 
-Se requiere elaborar una versión del legendario juego [BOMBERMAN NES](https://en.wikipedia.org/wiki/Bomberman_(1983_video_game)), utilizando como base el archivo [bomberman.zip](../../codigo/python3/juegos/bomberman.zip) y la librería [`pygame`](https://www.pygame.org/).
+Se requiere elaborar una versión del legendario juego [BOMBERMAN NES](https://en.wikipedia.org/wiki/Bomberman_(1983_video_game)), utilizando como base el archivo [bomberman.zip](https://github.com/diegoandresalvarez/bomberman/archive/master.zip) y la librería [`pygame`](https://www.pygame.org/).
 
 NOTA: en caso que encuentren un error en el programa suministrado, repórtenlo tan pronto sea posible para corregirlo.
 
